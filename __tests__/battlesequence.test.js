@@ -14,13 +14,12 @@ describe ('Battlesequence', () => {
   });
   });
 });
-
-describe ('diceRoll', () => {
-  const battle = new Battlesequence(); 
-  test('it should return a number between 1 and 20', () => {
-    expect(battle.diceRoll).toBeLessThanOrEqual(20);
+describe ('Battlesequence', () => {
+  const battle = new Battlesequence();
+  test("diceRoll should return 1-20", ()=>{
+    expect (battle.diceRoll()).toBeLessThanOrEqual(20); 
   });
-});
+  });
 
 //import {Player} from "../src/battlesequence.js"; 
 // //diceRoll, //operationRoll}

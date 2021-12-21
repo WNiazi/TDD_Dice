@@ -1,7 +1,7 @@
 
 export default class Battlesequence {
   constructor(num1, num2, operationRoll) {
-    this.num1=num1 ; 
+    this.num1=num1; 
     this.num2=num2; 
     // this.num1 = num1 || this.diceRoll ()
     // this.num2 = num2 || this.diceRoll ()
@@ -52,6 +52,9 @@ export default class Battlesequence {
 //     playerTwoWins = level; 
 //   }
 //   }
+// }
+// export default LevelingUp { 
+//   constructor (operationRoll, players)
 // }
 
 
