@@ -1,16 +1,18 @@
 import Battlesequence from "./../src/battlesequence.js"; 
-import diceRoll from "./../src/battlesequence.js"
 
 describe ('Battlesequence', () => {
+  // beforeAll(() => {
+  //   const battle = new Battlesequence (); 
+  // });
   const battle = new Battlesequence(2, 2);
   test ("adds 2+2 to equal 4", () => {
     expect(battle.num1).toEqual(2);
     expect(battle.num2).toEqual(2);
   });
   describe ('Battlesequence', () => {
-  const battle = new Battlesequence(2, 2, 1);
-  test("add num1+num2", ()=>{
-    expect (battle.battle()).toEqual(4);
+  const battle = new Battlesequence(2, 3, 2);
+  test("carry out the operationRoll", ()=>{
+    expect (battle.battle()).toEqual(-1);
   });
   });
 });
@@ -19,14 +21,10 @@ describe ('Battlesequence', () => {
   test("diceRoll should return 1-20", ()=>{
     expect (battle.diceRoll()).toBeLessThanOrEqual(20); 
   });
-  });
+ });
 
-//import {Player} from "../src/battlesequence.js"; 
-// //diceRoll, //operationRoll}
 
-// describe ("player", () => { 
-//   //  let Player; 
-//   //  beforeEach (() => { 
+
 //   // //  rollDice =new Rolldice; 
 //   // // currentRoll =new currentRoll 
 //   //  let player = new Player ("playerOne"); 

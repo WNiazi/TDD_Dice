@@ -23,7 +23,7 @@ export default class Battlesequence {
     if (operationRoll ===1 ){ 
       return (num1 + num2); 
     } else if (operationRoll ===2){ 
-      return (num1-num2); 
+      return (num1 - num2); 
     } else if (operationRoll ===3){ 
       return (num1 * num2); 
     } else if (operationRoll ===4){ 
@@ -34,28 +34,30 @@ export default class Battlesequence {
 
 
 // export default Victor { 
-//   constructor (playerOne, playerTwo, operatonRoll){
-//     this.playerOne =playerOne; 
-//     this.playerTwo =playerTwo; 
-//     this.operationRoll =operationRoll; 
+//   constructor (playerOne, playerTwo, battle){
+//     this.playerOne = playerOne; 
+//     this.playerTwo = playerTwo; 
+//     this.battle = battle (); 
 //     level =1; 
 //   }
 //   claimVictor (){ 
-//     playerOne = operationRoll(); 
-//     playerTwo = operationRoll(); 
-//     if (playerOneTotal > playerTwoTotal ) { 
-//     playerOneWins += level;   
-//   } else if (playerTwoTotal <playerOneTotal) { 
-//     playerTwoWins +=level; 
-//   } else if (playerTwoTotal =playerOneTotal){ 
-//     playerOneWins = level; 
-//     playerTwoWins = level; 
+//     playerOne = this.battle (); 
+//     playerTwo = this.battle (); 
+
+//     if (playerOne > playerTwo ) { 
+//     playerOne += level;
+//     let playerOneBenefit = new operation (); 
+//     playerOneBenefit = Math.floor(Math.random ()* 3) +1;
+//     playerTwo -= level; 
+//   } else if (playerTwo < playerOne) { 
+//     playerTwo += level; 
+//     playerOne -= level; 
+//   } else if (playerTwoTotal = playerOneTotal){ 
+//     playerOne = level; 
+//     playerTwo = level; 
 //   }
 //   }
 // }
-// export default LevelingUp { 
-//   constructor (operationRoll, players)
-// }
 
 
 
@@ -63,7 +65,7 @@ export default class Battlesequence {
 
 
 
-// // //we need a dice roll x 3 (two of the same and one with math operations)
+
 // // //so constants are players 1 and 2 ,  diceRolltotal, currentRoll, comparingRolls, clearingRoll. 
 // // function diceRoll {twoRolls, operationRoll, currentRoll, compareRoll, clearingRoll}
 // // this.currentRoll =currentRoll; 
