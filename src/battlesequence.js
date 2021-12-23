@@ -1,25 +1,25 @@
 
 export default class Battlesequence {
-  constructor(num1, num2, operationRoll) {
-    this.num1=num1; 
-    this.num2=num2; 
-    // this.num1 = num1 || this.diceRoll ()
-    // this.num2 = num2 || this.diceRoll ()
-    this.operationRoll = operationRoll
+  constructor( ) {
+    this.num1 = 0;  
+    this.num2 = 0; 
+    this.operationRoll = 0; 
+   
   }
   operation() { 
     return Math.floor(Math.random ()* 4) +1; 
   }
-  reRollDice() { 
+  reRollDice () { 
     this.num1 = this.diceRoll(); 
     this.num2 = this.diceRoll();
-    this.operationRoll =this.operation (); 
+    this.operationRoll = operation ();
   }
   diceRoll() { 
     return Math.floor(Math.random ()* 20) +1; 
   }
+  //rollDice change name 
   battle() { 
-    const {operationRoll, num1, num2}=this 
+    const {operationRoll, num1, num2} = this;
     if (operationRoll ===1 ){ 
       return (num1 + num2); 
     } else if (operationRoll ===2){ 
@@ -33,39 +33,3 @@ export default class Battlesequence {
 }
 
 
-// export default Victor { 
-//   constructor (playerOne, playerTwo, battle){
-//     this.playerOne = playerOne; 
-//     this.playerTwo = playerTwo; 
-//     this.battle = battle (); 
-//     level =1; 
-//   }
-//   claimVictor (){ 
-//     playerOne = this.battle (); 
-//     playerTwo = this.battle (); 
-
-//     if (playerOne > playerTwo ) { 
-//     playerOne += level;
-//     let playerOneBenefit = new operation (); 
-//     playerOneBenefit = Math.floor(Math.random ()* 3) +1;
-//     playerTwo -= level; 
-//   } else if (playerTwo < playerOne) { 
-//     playerTwo += level; 
-//     playerOne -= level; 
-//   } else if (playerTwoTotal = playerOneTotal){ 
-//     playerOne = level; 
-//     playerTwo = level; 
-//   }
-//   }
-// }
-
-
-
-
-
-
-
-
-// // //so constants are players 1 and 2 ,  diceRolltotal, currentRoll, comparingRolls, clearingRoll. 
-// // function diceRoll {twoRolls, operationRoll, currentRoll, compareRoll, clearingRoll}
-// // this.currentRoll =currentRoll; 
