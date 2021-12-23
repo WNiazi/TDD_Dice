@@ -22,6 +22,7 @@ export default class Game {
     sequence1.reRollDice (); 
     this.playerOne.score = sequence1.battle(); 
     // this.playerOne.setScore (); 
+    
     sequence2.reRollDice (); 
     this.playerTwo.score = sequence2.battle(); 
   }
